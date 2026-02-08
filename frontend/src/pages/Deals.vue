@@ -319,7 +319,7 @@ function getRow(name, field) {
 }
 
 function getColumnTotalValue(column) {
-  const valueField = 'total'
+  const valueField = 'annual_revenue'
   const data = column?.data || []
   const total = data.reduce((sum, item) => {
     const raw = item[valueField]
@@ -328,7 +328,7 @@ function getColumnTotalValue(column) {
         ? raw
         : typeof raw === 'object' && raw != null && typeof raw.value === 'number'
           ? raw.value
-          : parseFloat(raw) || 0
+          : parseFloat(String(raw).replace(/,/g, '')) || 0
     return sum + num
   }, 0)
   return getFormattedCurrency(valueField, { [valueField]: total })
