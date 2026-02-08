@@ -319,7 +319,7 @@ function getRow(name, field) {
 }
 
 function getColumnTotalValue(column) {
-  const valueField = 'annual_revenue'
+  const valueField = 'total'
   const data = column?.data || []
   const total = data.reduce((sum, item) => {
     const raw = item[valueField]
