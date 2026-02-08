@@ -113,7 +113,10 @@
 
     <template #fields="{ fieldName, itemName }">
       <div
-        v-if="getRow(itemName, fieldName).label"
+        v-if="
+          getRow(itemName, fieldName).label ||
+          ['total', 'annual_revenue'].includes(fieldName)
+        "
         class="truncate flex items-center gap-2"
       >
         <div v-if="fieldName === 'status'">
@@ -138,7 +141,14 @@
           />
         </div>
         <div
-          v-if="
+          v-else-if="['total', 'annual_revenue'].includes(fieldName)"
+          class="truncate text-base font-medium"
+        >
+          {{ fieldName === 'total' ? __('Total') : __('Annual revenue') }}:
+          {{ getRow(itemName, fieldName).label || '—' }}
+        </div>
+        <div
+          v-else-if="
             [
               'modified',
               'creation',
@@ -319,16 +329,17 @@ function getRow(name, field) {
 }
 
 function getColumnTotalValue(column) {
-  const valueField = 'annual_revenue'
   const data = column?.data || []
+  const valueField = 'total'
+  const fallbackField = 'annual_revenue'
   const total = data.reduce((sum, item) => {
-    const raw = item[valueField]
+    const raw = item[valueField] ?? item[fallbackField]
     const num =
       typeof raw === 'number'
         ? raw
         : typeof raw === 'object' && raw != null && typeof raw.value === 'number'
           ? raw.value
-          : parseFloat(String(raw).replace(/,/g, '')) || 0
+          : parseFloat(String(raw || '').replace(/,/g, '')) || 0
     return sum + num
   }, 0)
   return getFormattedCurrency(valueField, { [valueField]: total })
