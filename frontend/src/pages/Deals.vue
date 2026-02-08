@@ -41,6 +41,11 @@
     @update="(data) => viewControls.updateKanbanSettings(data)"
     @loadMore="(columnName) => viewControls.loadMoreKanban(columnName)"
   >
+    <template #column-subtitle="{ column }">
+      <div class="text-ink-gray-6 text-sm font-medium mt-0.5">
+        {{ __('Total') }}: {{ getColumnTotalValue(column) }}
+      </div>
+    </template>
     <template #title="{ titleField, itemName }">
       <div class="flex gap-2 items-center">
         <div v-if="titleField === 'status'">
@@ -311,6 +316,22 @@ function getRow(name, field) {
     return { label: value }
   }
   return getValue(rows.value?.find((row) => row.name == name)[field])
+}
+
+function getColumnTotalValue(column) {
+  const valueField = 'annual_revenue'
+  const data = column?.data || []
+  const total = data.reduce((sum, item) => {
+    const raw = item[valueField]
+    const num =
+      typeof raw === 'number'
+        ? raw
+        : typeof raw === 'object' && raw != null && typeof raw.value === 'number'
+          ? raw.value
+          : parseFloat(raw) || 0
+    return sum + num
+  }, 0)
+  return getFormattedCurrency(valueField, { [valueField]: total })
 }
 
 // Rows

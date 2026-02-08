@@ -50,7 +50,15 @@
                   </div>
                 </template>
               </Popover>
-              <div class="text-ink-gray-9">{{ column.column.name }}</div>
+              <div class="flex flex-col gap-0">
+                <div class="text-ink-gray-9">{{ column.column.name }}</div>
+                <slot
+                  name="column-subtitle"
+                  v-bind="{ column }"
+                >
+                  <!-- optional total/summary below column name -->
+                </slot>
+              </div>
             </div>
             <div class="flex">
               <Dropdown :options="actions(column)">
