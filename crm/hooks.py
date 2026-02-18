@@ -259,6 +259,12 @@ after_migrate = [
 	"crm.api.whatsapp.add_roles",
 ]
 
+# Fixtures (export with: bench --site <site> export-fixtures --app crm)
+# ----------------------------------------------------------------------
+fixtures = [
+	"Kanban Board"
+]
+
 standard_dropdown_items = [
 	{
 		"name1": "app_selector",

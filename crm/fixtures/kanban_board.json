@@ -1,0 +1,212 @@
+[
+ {
+  "columns": [
+   {
+    "column_name": "REVIEW",
+    "indicator": "Gray",
+    "order": "[\"PROJ-0004\", \"PROJ-0003\"]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "FINALIZING INFO",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "DESIGNING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "ESTIMATING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "MEETING SET",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "PRESENTED",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "REVISIONS",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "NEGOTIATING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "WON",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Design Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Kanban Board",
+  "field_name": "custom_design_status",
+  "fields": null,
+  "filters": null,
+  "kanban_board_name": "Design Pipeline",
+  "modified": "2026-02-18 01:49:42.739021",
+  "name": "Design Pipeline",
+  "private": 0,
+  "reference_doctype": "Project",
+  "show_labels": 0
+ },
+ {
+  "columns": [
+   {
+    "column_name": "REVIEW",
+    "indicator": "Gray",
+    "order": "[\"PROJ-0007\", \"PROJ-0006\", \"PROJ-0005\", \"PROJ-0004\", \"PROJ-0003\"]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "PROJECT START",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "FINALIZING INFO",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "ORDERING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "PROGRAMMING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "SENT TO SHOP",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "SCHEDULING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "PRE STAGING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "DELIVERY",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "INSTALLATION",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "QC",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "Project Pipeline",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Kanban Board",
+  "field_name": "custom_project_status",
+  "fields": null,
+  "filters": null,
+  "kanban_board_name": "Project Pipeline",
+  "modified": "2026-02-18 02:10:36.764026",
+  "name": "Project Pipeline",
+  "private": 0,
+  "reference_doctype": "Project",
+  "show_labels": 0
+ }
+]
