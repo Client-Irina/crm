@@ -157,7 +157,8 @@ doc_events = {
 	},
 	"CRM Deal": {
 		"on_update": [
-			"crm.fcrm.doctype.erpnext_crm_settings.erpnext_crm_settings.create_customer_in_erpnext"
+			"crm.fcrm.doctype.erpnext_crm_settings.erpnext_crm_settings.create_customer_in_erpnext",
+			"crm.fcrm.utils.create_project_from_deal.create_project_from_won_deal",
 		],
 	},
 	"User": {
