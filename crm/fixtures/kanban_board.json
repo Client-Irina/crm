@@ -4,7 +4,7 @@
    {
     "column_name": "REVIEW",
     "indicator": "Gray",
-    "order": "[]",
+    "order": "[\"PROJ-0007\", \"PROJ-0006\", \"PROJ-0005\", \"PROJ-0004\", \"PROJ-0003\"]",
     "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
@@ -89,7 +89,7 @@
   "fields": null,
   "filters": "[[\"Project\",\"company\",\"=\",\"Traction X\",false]]",
   "kanban_board_name": "HH DESIGN PIPELINE",
-  "modified": "2026-02-18 10:42:18.939509",
+  "modified": "2026-02-19 01:55:48.349795",
   "name": "HH DESIGN PIPELINE",
   "private": 0,
   "reference_doctype": "Project",
@@ -203,7 +203,7 @@
   "fields": null,
   "filters": "[]",
   "kanban_board_name": "HH PROJECT PIPELINE",
-  "modified": "2026-02-19 01:30:30.844854",
+  "modified": "2026-02-19 01:55:52.552986",
   "name": "HH PROJECT PIPELINE",
   "private": 0,
   "reference_doctype": "Project",
@@ -317,7 +317,7 @@
   "fields": "[\"status\",\"name\"]",
   "filters": null,
   "kanban_board_name": "HH PRODUCTION PIPELINE",
-  "modified": "2026-02-19 01:31:12.759986",
+  "modified": "2026-02-19 01:46:13.994221",
   "name": "HH PRODUCTION PIPELINE",
   "private": 0,
   "reference_doctype": "Work Order",
@@ -527,10 +527,220 @@
   "fields": null,
   "filters": null,
   "kanban_board_name": "TX PROJECT PIPELINE",
-  "modified": "2026-02-19 01:30:51.620568",
+  "modified": "2026-02-19 01:55:50.423259",
   "name": "TX PROJECT PIPELINE",
   "private": 0,
   "reference_doctype": "Project",
+  "show_labels": 0
+ },
+ {
+  "columns": [
+   {
+    "column_name": "REVIEW",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "ORDERING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "CUSTOM",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "DOORS",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "FINISHING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "ASSEMBLY",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "QC",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "STAGING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "DELIVERY",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "INSTALL",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "DEFICIENCIES",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "HH PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Kanban Board",
+  "field_name": "custom_hh_production_pipeline",
+  "fields": null,
+  "filters": null,
+  "kanban_board_name": "HH PRODUCTION",
+  "modified": "2026-02-19 01:58:33.273506",
+  "name": "HH PRODUCTION",
+  "private": 0,
+  "reference_doctype": "Production Plan",
+  "show_labels": 0
+ },
+ {
+  "columns": [
+   {
+    "column_name": "REVIEW",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "PRODUCTION",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "STAGING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "QC",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "LOGISTICS",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "STAGING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "OUTBOUND",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "INSTALL",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "INBOUND",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PRODUCTION",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Kanban Board",
+  "field_name": "custom_tx_production_pipeline",
+  "fields": null,
+  "filters": null,
+  "kanban_board_name": "TX PRODUCTION",
+  "modified": "2026-02-19 01:58:42.772343",
+  "name": "TX PRODUCTION",
+  "private": 0,
+  "reference_doctype": "Production Plan",
   "show_labels": 0
  }
 ]
