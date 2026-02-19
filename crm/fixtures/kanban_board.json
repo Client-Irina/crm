@@ -5,7 +5,7 @@
     "column_name": "REVIEW",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -14,7 +14,7 @@
     "column_name": "FINALIZING INFO",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -23,7 +23,7 @@
     "column_name": "DESIGNING",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -32,7 +32,7 @@
     "column_name": "ESTIMATING",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -41,7 +41,7 @@
     "column_name": "MEETING SET",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -50,7 +50,7 @@
     "column_name": "PRESENTED",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -59,7 +59,7 @@
     "column_name": "REVISIONS",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -68,7 +68,7 @@
     "column_name": "NEGOTIATING",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -77,7 +77,7 @@
     "column_name": "WON",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Design Pipeline",
+    "parent": "HH DESIGN PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -88,9 +88,9 @@
   "field_name": "custom_design_status",
   "fields": null,
   "filters": "[[\"Project\",\"company\",\"=\",\"Traction X\",false]]",
-  "kanban_board_name": "Design Pipeline",
+  "kanban_board_name": "HH DESIGN PIPELINE",
   "modified": "2026-02-18 10:42:18.939509",
-  "name": "Design Pipeline",
+  "name": "HH DESIGN PIPELINE",
   "private": 0,
   "reference_doctype": "Project",
   "show_labels": 0
@@ -101,7 +101,7 @@
     "column_name": "REVIEW",
     "indicator": "Gray",
     "order": "[\"PROJ-0007\", \"PROJ-0006\", \"PROJ-0005\", \"PROJ-0004\", \"PROJ-0003\"]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -110,7 +110,7 @@
     "column_name": "PROJECT START",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -119,7 +119,7 @@
     "column_name": "FINALIZING INFO",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -128,7 +128,7 @@
     "column_name": "ORDERING",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -137,7 +137,7 @@
     "column_name": "PROGRAMMING",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -146,7 +146,7 @@
     "column_name": "SENT TO SHOP",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -155,7 +155,7 @@
     "column_name": "SCHEDULING",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -164,7 +164,7 @@
     "column_name": "PRE STAGING",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -173,7 +173,7 @@
     "column_name": "DELIVERY",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -182,7 +182,7 @@
     "column_name": "INSTALLATION",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -191,7 +191,7 @@
     "column_name": "QC",
     "indicator": "Gray",
     "order": "[]",
-    "parent": "Project Pipeline",
+    "parent": "HH PROJECT PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
     "status": "Active"
@@ -201,10 +201,10 @@
   "doctype": "Kanban Board",
   "field_name": "custom_project_status",
   "fields": null,
-  "filters": "[[\"Project\",\"company\",\"=\",\"Hempston Home\",false]]",
-  "kanban_board_name": "Project Pipeline",
-  "modified": "2026-02-18 11:21:38.877086",
-  "name": "Project Pipeline",
+  "filters": "[]",
+  "kanban_board_name": "HH PROJECT PIPELINE",
+  "modified": "2026-02-19 01:30:30.844854",
+  "name": "HH PROJECT PIPELINE",
   "private": 0,
   "reference_doctype": "Project",
   "show_labels": 0
@@ -214,7 +214,7 @@
    {
     "column_name": "REVIEW",
     "indicator": "Gray",
-    "order": "[\"MFG-WO-2026-00001\"]",
+    "order": "[]",
     "parent": "HH PRODUCTION PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
@@ -232,7 +232,7 @@
    {
     "column_name": "CUSTOM",
     "indicator": "Gray",
-    "order": "[]",
+    "order": "[\"MFG-WO-2026-00001\"]",
     "parent": "HH PRODUCTION PIPELINE",
     "parentfield": "columns",
     "parenttype": "Kanban Board",
@@ -317,7 +317,7 @@
   "fields": "[\"status\",\"name\"]",
   "filters": null,
   "kanban_board_name": "HH PRODUCTION PIPELINE",
-  "modified": "2026-02-18 11:31:51.483732",
+  "modified": "2026-02-19 01:31:12.759986",
   "name": "HH PRODUCTION PIPELINE",
   "private": 0,
   "reference_doctype": "Work Order",
@@ -413,10 +413,124 @@
   "fields": "[\"name\", \"status\"]",
   "filters": null,
   "kanban_board_name": "TX PRODUCTION PIPELINE",
-  "modified": "2026-02-18 11:32:19.371335",
+  "modified": "2026-02-18 11:42:12.203996",
   "name": "TX PRODUCTION PIPELINE",
   "private": 0,
   "reference_doctype": "Work Order",
   "show_labels": 1
+ },
+ {
+  "columns": [
+   {
+    "column_name": "REVIEW",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "TEMPLATES",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "GRAPHICS",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "ORDERING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "CUSTOM",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "DOCUMENTS",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "LOGISTICS",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "STAGING",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "OUTBOUND",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "INSTALL",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   },
+   {
+    "column_name": "INBOUND",
+    "indicator": "Gray",
+    "order": "[]",
+    "parent": "TX PROJECT PIPELINE",
+    "parentfield": "columns",
+    "parenttype": "Kanban Board",
+    "status": "Active"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Kanban Board",
+  "field_name": "custom_tx_project_status",
+  "fields": null,
+  "filters": null,
+  "kanban_board_name": "TX PROJECT PIPELINE",
+  "modified": "2026-02-19 01:30:51.620568",
+  "name": "TX PROJECT PIPELINE",
+  "private": 0,
+  "reference_doctype": "Project",
+  "show_labels": 0
  }
 ]
