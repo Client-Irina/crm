@@ -326,7 +326,7 @@ class CRMDeal(Document):
 		return {
 			"column_field": "status",
 			"title_field": "organization",
-			"kanban_fields": '["total", "annual_revenue", "email", "mobile_no", "_assign", "modified"]',
+			"kanban_fields": '["total", "annual_revenue", "email", "mobile_no", "_assign", "modified", "custom_project_photo"]',
 		}
 
 
