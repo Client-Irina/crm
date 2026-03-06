@@ -156,6 +156,7 @@ doc_events = {
 		"on_update": ["crm.api.whatsapp.on_update"],
 	},
 	"CRM Deal": {
+		"validate": ["crm.api.crm_deal.validate"],
 		"on_update": [
 			"crm.fcrm.doctype.erpnext_crm_settings.erpnext_crm_settings.create_customer_in_erpnext",
 			"crm.fcrm.utils.create_project_from_deal.create_project_from_won_deal",
