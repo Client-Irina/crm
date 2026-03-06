@@ -155,6 +155,9 @@ doc_events = {
 		"validate": ["crm.api.whatsapp.validate"],
 		"on_update": ["crm.api.whatsapp.on_update"],
 	},
+	"File": {
+		"after_insert": ["crm.api.file.after_insert"],
+	},
 	"CRM Deal": {
 		"validate": ["crm.api.crm_deal.validate"],
 		"on_update": [
