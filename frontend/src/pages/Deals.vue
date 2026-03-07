@@ -46,68 +46,83 @@
         {{ __('Total') }}: {{ getColumnTotalValue(column) }}
       </div>
     </template>
-    <template #title="{ titleField, itemName }">
-      <div class="flex gap-2 items-center">
-        <div v-if="titleField === 'status'">
-          <IndicatorIcon :class="getRow(itemName, titleField).color" />
-        </div>
+    <template #title="{ titleField, itemName, fields }">
+      <div class="flex flex-col gap-2">
         <div
-          v-else-if="
-            titleField === 'organization' && getRow(itemName, titleField).label
-          "
+          v-if="getCardImage(fields)"
+          class="w-full h-28 rounded-md overflow-hidden bg-surface-gray-2"
         >
-          <Avatar
-            class="flex items-center"
-            :image="getRow(itemName, titleField).logo"
-            :label="getRow(itemName, titleField).label"
-            size="sm"
+          <img
+            :src="getCardImage(fields)"
+            alt=""
+            class="w-full h-full object-cover"
           />
         </div>
-        <div
-          v-else-if="
-            titleField === 'deal_owner' &&
-            getRow(itemName, titleField).full_name
-          "
-        >
-          <Avatar
-            class="flex items-center"
-            :image="getRow(itemName, titleField).user_image"
-            :label="getRow(itemName, titleField).full_name"
-            size="sm"
-          />
+        <div class="flex gap-2 items-center">
+          <div v-if="titleField === 'status'">
+            <IndicatorIcon :class="getRow(itemName, titleField).color" />
+          </div>
+          <div
+            v-else-if="
+              titleField === 'organization' && getRow(itemName, titleField).label
+            "
+          >
+            <Avatar
+              class="flex items-center"
+              :image="getRow(itemName, titleField).logo"
+              :label="getRow(itemName, titleField).label"
+              size="sm"
+            />
+          </div>
+          <div
+            v-else-if="
+              titleField === 'deal_owner' &&
+              getRow(itemName, titleField).full_name
+            "
+          >
+            <Avatar
+              class="flex items-center"
+              :image="getRow(itemName, titleField).user_image"
+              :label="getRow(itemName, titleField).full_name"
+              size="sm"
+            />
+          </div>
+          <div
+            v-if="
+              [
+                'modified',
+                'creation',
+                'first_response_time',
+                'first_responded_on',
+                'response_by',
+              ].includes(titleField)
+            "
+            class="truncate text-base"
+          >
+            <Tooltip :text="getRow(itemName, titleField).label">
+              <div>{{ getRow(itemName, titleField).timeAgo }}</div>
+            </Tooltip>
+          </div>
+          <div
+            v-else-if="titleField === 'sla_status'"
+            class="truncate text-base"
+          >
+            <Badge
+              v-if="getRow(itemName, titleField).value"
+              :variant="'subtle'"
+              :theme="getRow(itemName, titleField).color"
+              size="md"
+              :label="getRow(itemName, titleField).value"
+            />
+          </div>
+          <div
+            v-else-if="getRow(itemName, titleField).label"
+            class="truncate text-base"
+          >
+            {{ getRow(itemName, titleField).label }}
+          </div>
+          <div class="text-ink-gray-4" v-else>{{ __('No title') }}</div>
         </div>
-        <div
-          v-if="
-            [
-              'modified',
-              'creation',
-              'first_response_time',
-              'first_responded_on',
-              'response_by',
-            ].includes(titleField)
-          "
-          class="truncate text-base"
-        >
-          <Tooltip :text="getRow(itemName, titleField).label">
-            <div>{{ getRow(itemName, titleField).timeAgo }}</div>
-          </Tooltip>
-        </div>
-        <div v-else-if="titleField === 'sla_status'" class="truncate text-base">
-          <Badge
-            v-if="getRow(itemName, titleField).value"
-            :variant="'subtle'"
-            :theme="getRow(itemName, titleField).color"
-            size="md"
-            :label="getRow(itemName, titleField).value"
-          />
-        </div>
-        <div
-          v-else-if="getRow(itemName, titleField).label"
-          class="truncate text-base"
-        >
-          {{ getRow(itemName, titleField).label }}
-        </div>
-        <div class="text-ink-gray-4" v-else>{{ __('No title') }}</div>
       </div>
     </template>
 
@@ -177,6 +192,9 @@
             :avatars="getRow(itemName, fieldName).label"
             size="xs"
           />
+        </div>
+        <div v-else-if="fieldName === 'custom_project_photo'">
+          <!-- image rendered in title; hide text path -->
         </div>
         <div v-else class="truncate text-base">
           {{ getRow(itemName, fieldName).label }}
@@ -326,6 +344,11 @@ function getRow(name, field) {
     return { label: value }
   }
   return getValue(rows.value?.find((row) => row.name == name)[field])
+}
+
+function getCardImage(fields) {
+  if (!fields) return ''
+  return fields.custom_project_photo || fields.custom_project_photo_image || ''
 }
 
 function getColumnTotalValue(column) {
