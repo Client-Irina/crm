@@ -178,7 +178,6 @@ doc_events = {
 		"validate": ["crm.api.production_plan.validate"],
 	},
 	"Project": {
-		"before_insert": ["crm.api.project.before_insert"],
 		"validate": ["crm.api.project.validate"],
 	},
 }
